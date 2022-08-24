@@ -1,0 +1,80 @@
+:root{
+  --fondo: #180c41;
+  --color1: #1a1467;
+  --color2: #1d1a46;
+  --titulos:#e3e3e3;
+  --subtitulos:#813988;
+  --textos:#60a8f5;
+}
+.App {
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+  text-align: center;
+  box-sizing: border-box;
+
+  .App-header {
+    font-family: 'Poppins', sans-serif;
+    background: rgb(13,17,82);
+    background: linear-gradient(90deg, rgba(13,17,82,1) 0%, rgba(33,28,52,1) 100%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: #e3e3e3;
+  }
+  h1{
+    padding: 20px;
+  }
+  .editor-wrapper{
+    width: 800px;
+    background-color: #e3e3e3;
+    padding: 5px;
+    background-color: var(--color1);
+    h4{
+      color: var(--subtitulos);
+      margin: 0;
+    }
+  }
+  textarea {
+    background-color: var(--color2);
+    color: var(--textos);
+    width: 99%;
+    min-height: 200px;
+    margin-bottom: -5px;
+    resize: vertical;
+    outline: none;
+    padding-left: 5px;
+    padding-top: 5px;
+    font-size: 1rem;
+    border: none;
+  }
+  textarea::-webkit-scrollbar{
+    width: 10px;
+}
+textarea::-webkit-scrollbar-thumb{
+    background: #bd8efa;
+    border-radius: 6px;
+}
+textarea::-webkit-scrollbar-thumb:hover{
+    background: var(--subtitulos);
+}
+  .preview-box{
+    background-color: var(--color1);
+    width: 900px;
+    margin: 25px;
+    padding: 10px;
+    h4{
+      color: var(--subtitulos);
+    }
+    #preview{
+      background-color: var(--color2);
+      width: 100%;
+    }
+  }
+  
+}
+
+
+
+
